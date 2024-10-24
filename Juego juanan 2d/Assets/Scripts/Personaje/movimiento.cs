@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class movimiento : MonoBehaviour
 {
-    public float speed = 3f;
+    public float speed = 1f;
     public Rigidbody2D personajeRB;
     public float rota = 5f;
     float moveX;
