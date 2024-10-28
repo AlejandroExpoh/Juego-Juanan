@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personaje: {fileID: 103904665}
-  cameraDistance: 50
+  cameraDistance: 10
 --- !u!1 &612604138
 GameObject:
   m_ObjectHideFlags: 0

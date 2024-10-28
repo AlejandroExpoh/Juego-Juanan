@@ -7,6 +7,7 @@ public class movimiento : MonoBehaviour
     public float speed = 1f;
     public Rigidbody2D personajeRB;
     public float rota = 5f;
+    float change = .8f;
     float moveX;
     float moveY;
     // Start is called before the first frame update
@@ -32,8 +33,12 @@ public class movimiento : MonoBehaviour
     {
         moveX = Input.GetAxis("Horizontal");
         moveY = Input.GetAxis("Vertical");
-        Vector2 fullMovement = new Vector2(moveX, moveY).normalized * speed * Time.deltaTime;
-        personajeRB.velocity = fullMovement;
+        Vector2 fullMovement = new Vector2(moveX, moveY).normalized;
+        Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        float directchanger = Vector2.Dot(fullMovement, direction);
+        float newspeed = directchanger > 0 ? speed : speed * change;
+
+        personajeRB.velocity = fullMovement * newspeed * Time.deltaTime;
 
     }
     public void rotation()
