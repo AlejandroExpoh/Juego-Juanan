@@ -23,10 +23,7 @@ public class movimiento : MonoBehaviour
         rotation();
         
 
-        /*Vector3 mousePosition = Input.mousePosition;
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        Vector2 direction = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
-        transform.up = direction;*/
+        
     }
 
     public void movement()
@@ -45,7 +42,6 @@ public class movimiento : MonoBehaviour
     {
         Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rota * Time.deltaTime);
+        personajeRB.rotation = Mathf.LerpAngle(personajeRB.rotation, angle, rota * Time.deltaTime);
     }
 }
