@@ -6,25 +6,37 @@ public class FOV : MonoBehaviour
 {
     [SerializeField] private LayerMask layerMask;
     private Mesh mesh;
+    private Vector3 origin;
+    private float startinangle;
+    private float fov;
     public static Vector3 GetVectorFromAngle(float angle)
     {
         float angleRad = angle * (Mathf.PI / 180f);
         return new Vector3(Mathf.Cos(angleRad), Mathf.Sin(angleRad));
     }
 
+    public static float GetAngleFromVectorFloat(Vector3 dir)
+    {
+        dir = dir.normalized;
+        float n = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        if (n < 0) n += 360;
+
+        return n;
+    }
+
     void Start()
     {
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
+        fov = 90f;
+        origin = Vector3.zero;
     }
 
 
-    private void Update()
+    private void LateUpdate()
     {
-        float fov = 90f;
-        Vector3 origin = Vector3.zero;
         int rayCount = 50;
-        float angle = 0f;
+        float angle = startinangle;
         float angleIncrease = fov / rayCount;
         float viewDistance = 10f;
 
@@ -67,6 +79,16 @@ public class FOV : MonoBehaviour
         mesh.uv = uv;
         mesh.triangles = triangles;
 
+    }
+
+    public void SetOrigin(Vector3 origin)
+    {
+        this.origin = origin;
+    }
+
+    public void SetAimDirection (Vector3 aimDirection)
+    {
+        startinangle = GetAngleFromVectorFloat(aimDirection) - fov / 2f; ;
     }
 
 }

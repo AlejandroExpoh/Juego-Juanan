@@ -10,6 +10,7 @@ public class movimiento : MonoBehaviour
     float change = .8f;
     float moveX;
     float moveY;
+    [SerializeField] private FOV FOV;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +35,8 @@ public class movimiento : MonoBehaviour
         Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float directchanger = Vector2.Dot(fullMovement, direction);
         float newspeed = directchanger > 0 ? speed : speed * change;
-
+        FOV.SetAimDirection(direction);
+        FOV.SetOrigin(transform.position);
         personajeRB.velocity = fullMovement * newspeed * Time.deltaTime;
 
     }
