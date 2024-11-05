@@ -35,7 +35,6 @@ public class movimiento : MonoBehaviour
         Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float directchanger = Vector2.Dot(fullMovement, direction);
         float newspeed = directchanger > 0 ? speed : speed * change;
-        FOV.SetAimDirection(direction);
         FOV.SetOrigin(transform.position);
         personajeRB.velocity = fullMovement * newspeed * Time.deltaTime;
 
@@ -45,5 +44,7 @@ public class movimiento : MonoBehaviour
         Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         personajeRB.rotation = Mathf.LerpAngle(personajeRB.rotation, angle, rota * Time.deltaTime);
+        FOV.SetAimDirection(direction);
+
     }
 }

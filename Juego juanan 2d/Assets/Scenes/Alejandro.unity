@@ -157,6 +157,7 @@ MonoBehaviour:
   speed: 500
   personajeRB: {fileID: 103904662}
   rota: 5
+  FOV: {fileID: 264052000}
 --- !u!50 &103904662
 Rigidbody2D:
   serializedVersion: 4
