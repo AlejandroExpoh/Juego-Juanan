@@ -9,6 +9,7 @@ public class FOV : MonoBehaviour
     private Vector3 origin;
     private float startinangle;
     private float fov;
+    public float viewDistance;
     public static Vector3 GetVectorFromAngle(float angle)
     {
         float angleRad = angle * (Mathf.PI / 180f);
@@ -29,6 +30,7 @@ public class FOV : MonoBehaviour
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
         fov = 90f;
+        viewDistance = 10f;
         origin = Vector3.zero;
     }
 
@@ -38,7 +40,7 @@ public class FOV : MonoBehaviour
         int rayCount = 50;
         float angle = startinangle;
         float angleIncrease = fov / rayCount;
-        float viewDistance = 10f;
+      
 
         Vector3[] vertices = new Vector3[rayCount + 1 + 1];
         Vector2[] uv = new Vector2[vertices.Length];
@@ -78,6 +80,7 @@ public class FOV : MonoBehaviour
         mesh.vertices = vertices;
         mesh.uv = uv;
         mesh.triangles = triangles;
+        mesh.bounds = new Bounds(origin, Vector3.one * 1000f);
 
     }
 
@@ -89,6 +92,16 @@ public class FOV : MonoBehaviour
     public void SetAimDirection (Vector3 aimDirection)
     {
         startinangle = GetAngleFromVectorFloat(aimDirection) + 90f - fov / 2f; ;
+    }
+
+    public void SetFov(float fov)
+    {
+        this.fov = fov;
+    }
+
+    public void SetViewDistance(float viewDistance)
+    {
+        this.viewDistance = viewDistance;
     }
 
 }

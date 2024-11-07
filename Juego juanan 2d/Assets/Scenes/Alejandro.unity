@@ -634,6 +634,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 8
+  viewDistance: 0
 --- !u!4 &264052001
 Transform:
   m_ObjectHideFlags: 0
@@ -2164,10 +2165,10 @@ SceneRoots:
   - {fileID: 1111577249}
   - {fileID: 1317065952}
   - {fileID: 640766886}
-  - {fileID: 264052001}
   - {fileID: 115983060}
   - {fileID: 954649982}
   - {fileID: 135017558}
   - {fileID: 1527213180}
   - {fileID: 1430086028}
   - {fileID: 1915917537}
+  - {fileID: 264052001}

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class movimiento : MonoBehaviour
@@ -51,4 +52,6 @@ public class movimiento : MonoBehaviour
     {
         return transform.position;
     }
+ 
+    
 }
