@@ -224,7 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 554936654}
   - component: {fileID: 554936655}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pared Habitacion - Mansion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
