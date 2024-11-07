@@ -47,4 +47,8 @@ public class movimiento : MonoBehaviour
         FOV.SetAimDirection(direction);
 
     }
+    public Vector3 GetPosition()
+    {
+        return transform.position;
+    }
 }

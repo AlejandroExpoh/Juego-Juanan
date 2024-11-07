@@ -11,7 +11,10 @@ public void Setup(Func<Vector3> GetcameraFollowPositionFunc)
         this.GetcameraFollowPositionFunc = GetcameraFollowPositionFunc;
     }
 
-    // Update is called once per frame
+    public void SetGetCameraFollowPositionFunc(Func<Vector3> GetcameraFollowPositionFunc)
+    {
+       this.GetcameraFollowPositionFunc = GetcameraFollowPositionFunc;
+    }
     void Update()
     {
         Vector3 cameraFollowPosition = GetcameraFollowPositionFunc();

@@ -857,7 +857,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &640766883
 Rigidbody2D:
   serializedVersion: 4
@@ -1944,6 +1944,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraFollow: {fileID: 519420033}
   playerTransform: {fileID: 103904665}
+  Jugador: {fileID: 103904661}
+  MirarlejosMult: 0.15
 --- !u!4 &1915917537
 Transform:
   m_ObjectHideFlags: 0
