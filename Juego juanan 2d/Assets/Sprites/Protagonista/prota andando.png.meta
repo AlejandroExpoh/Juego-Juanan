@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ce46a69c57a20a94aa5ac0803784dfca
+guid: 9bb3225309496084ab2413e12a25fed4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,64 +110,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mujer andando_0
+      name: prota andando_0
       rect:
         serializedVersion: 2
-        x: 151
-        y: 1194
-        width: 655
-        height: 670
-      alignment: 9
-      pivot: {x: 0.5072992, y: 0.65006167}
+        x: 0
+        y: 2520
+        width: 1824
+        height: 1339
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bebfc9d752b23147b7a4f54e2c9447c
-      internalID: -1091252494
+      spriteID: f9da9b9304df6054da65a7a251f57932
+      internalID: -1055512889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mujer andando_1
+      name: prota andando_1
       rect:
         serializedVersion: 2
-        x: 154
-        y: 2083
-        width: 655
-        height: 670
-      alignment: 9
-      pivot: {x: 0.50729865, y: 0.5428106}
+        x: 0
+        y: 1254
+        width: 1824
+        height: 1339
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ba583f9f0ac13d448e3647d1818d84c
-      internalID: 44232866
+      spriteID: 4b72af1bb8063af43b8dd73f09f7fbdd
+      internalID: -387895296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mujer andando_2
+      name: prota andando_2
       rect:
         serializedVersion: 2
-        x: 154
-        y: 413
-        width: 655
-        height: 670
-      alignment: 9
-      pivot: {x: 0.5036497, y: 0.6034593}
+        x: 0
+        y: 24
+        width: 1824
+        height: 1339
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64510b68b810c9e4ba39ecc17b225c3e
-      internalID: 890947285
+      spriteID: e147278f0c9b7f04e90e7f19ac2df70f
+      internalID: 72090906
       vertices: []
       indices: 
       edges: []
@@ -183,12 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      mujer andando_0: -1091252494
-      mujer andando_1: 44232866
-      mujer andando_2: 890947285
-      mujer andando_3: -1981795425
-      mujer andando_4: 122995874
-      mujer andando_5: -797615454
+      prota andando_0: -1055512889
+      prota andando_1: -387895296
+      prota andando_2: 72090906
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
