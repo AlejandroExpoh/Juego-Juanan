@@ -30,14 +30,14 @@ public class FOV : MonoBehaviour
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
         fov = 90f;
-        viewDistance = 10f;
+        viewDistance = 15f;
         origin = Vector3.zero;
     }
 
 
     private void LateUpdate()
     {
-        int rayCount = 50;
+        int rayCount = 500;
         float angle = startinangle;
         float angleIncrease = fov / rayCount;
       
@@ -94,15 +94,15 @@ public class FOV : MonoBehaviour
         startinangle = GetAngleFromVectorFloat(aimDirection) + 90f - fov / 2f; ;
     }
 
-    public void SetFov(float fov)
-    {
-        this.fov = fov;
-    }
+    //public void SetFov(float fov)
+    //{
+    //    this.fov = fov;
+    //}
 
-    public void SetViewDistance(float viewDistance)
-    {
-        this.viewDistance = viewDistance;
-    }
+    //public void SetViewDistance(float viewDistance)
+    //{
+    //    this.viewDistance = viewDistance;
+    //}
 
 }
     
