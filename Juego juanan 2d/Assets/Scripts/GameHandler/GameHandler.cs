@@ -7,7 +7,7 @@ public class GameHandler : MonoBehaviour
     [SerializeField] private Camerafollow cameraFollow;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private movimiento Jugador;
-    public float MirarlejosMult = .3f;
+    public float MirarlejosMult = .5f;
 
     public static Vector3 GetMouseWorldPosition()
     {
