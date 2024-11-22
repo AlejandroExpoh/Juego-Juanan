@@ -43,5 +43,5 @@ public class Interactable : MonoBehaviour
         Debug.Log("Player no esta en posición");
     }
 
-
+    
 }
