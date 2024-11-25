@@ -37,7 +37,7 @@ public class FOV : MonoBehaviour
 
     private void LateUpdate()
     {
-        int rayCount = 500;
+        int rayCount = 1000;
         float angle = startinangle;
         float angleIncrease = fov / rayCount;
       

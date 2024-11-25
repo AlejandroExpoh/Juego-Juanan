@@ -6,7 +6,7 @@ using Pathfinding;
 public class EnemyGFX : MonoBehaviour
 {
     public AIPath aiPath;
-
+    
     // Update is called once per frame
     void Update()
     {

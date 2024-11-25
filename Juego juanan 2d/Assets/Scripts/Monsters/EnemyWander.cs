@@ -8,6 +8,8 @@ public class EnemyWander : MonoBehaviour
     //public Rigidbody2D rb;
     public BoxCollider2D gridarea;
     Vector3 positionWander;
+    public Transform EnemigoWander;
+    public float distancia = 4;
 
     void Start()
     {
@@ -15,14 +17,22 @@ public class EnemyWander : MonoBehaviour
     }
     public void randompos()
     {
+        
         Bounds limites = gridarea.bounds;
 
         float x = Random.Range(limites.min.x, limites.max.x);
         float y = Random.Range(limites.min.y, limites.max.y);
         positionWander = new Vector3(Mathf.Round(x), Mathf.Round(y), 0);
+        while(Vector3.Distance(positionWander,EnemigoWander.transform.position) < distancia)
+        {
+            x = Random.Range(limites.min.x, limites.max.x);
+            y = Random.Range(limites.min.y, limites.max.y);
+            positionWander = new Vector3(Mathf.Round(x), Mathf.Round(y), 0);
+        }
         transform.position = positionWander;
         Debug.Log(positionWander);
         
+
 
     }
 
