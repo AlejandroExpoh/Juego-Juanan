@@ -6,13 +6,27 @@ using UnityEngine;
 public class Chasing : MonoBehaviour
 {
 
-    public bool isChasing = false;
+    public bool AwareOfPlayer {  get; private set; }
+    public Vector2 DirectionToPlayer {  get; private set; }
+
+    [SerializeField]
+    private float _playerAwarenessDistance;
+
+
+    public bool Aware = false;
     public Rigidbody2D monsrb;
     public float rota = 5f;
     AIDestinationSetter aiDestinationSetter;
     Transform player, point;
-    [SerializeField] private FOV FOV;
- 
+
+
+    private void Awake()
+    {
+        player = FindObjectOfType<movimiento>().transform;
+    }
+
+
+
     void Start()
     {
         aiDestinationSetter = GetComponent<AIDestinationSetter>();
@@ -23,7 +37,19 @@ public class Chasing : MonoBehaviour
     
     void Update()
     {
-        if (isChasing)
+        Vector2 enemyToPlayerVector = player.position - transform.position;
+        DirectionToPlayer = enemyToPlayerVector.normalized;
+
+        if (enemyToPlayerVector.magnitude <= _playerAwarenessDistance)
+        {
+            Aware = true;
+        }
+        else
+        {
+            Aware = false;
+        }
+
+        if (Aware)
         {
             aiDestinationSetter.target = player;
         }
@@ -32,16 +58,6 @@ public class Chasing : MonoBehaviour
             aiDestinationSetter.target = point;
         }
 
-        
+    }
 
-    }
-    void FixedUpdate()
-    {
-        FOV.SetOrigin(transform.position);
-        Vector2 direction = transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        monsrb.rotation = angle;
-        FOV.SetAimDirection(direction);
-        
-    }
 }
