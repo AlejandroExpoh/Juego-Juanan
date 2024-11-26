@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 402c0adcdf3dff74da194cbc2b5b8bdc
+guid: bf47465e260fda54ba4a032052904cd8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Sprite bicho 2.png2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 774.3333
+        height: 1415
+      alignment: 9
+      pivot: {x: 0.69090474, y: 0.6122701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161ff207e5aba5941992d264e0023ff2
+      internalID: -779659072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite bicho 2.png2_1
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 0
+        width: 774
+        height: 1415
+      alignment: 9
+      pivot: {x: 0.5616324, y: 0.613825}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba68b2051d111f245bc142a4e988709d
+      internalID: -255228119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite bicho 2.png2_2
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 0
+        width: 774
+        height: 1415
+      alignment: 9
+      pivot: {x: 0.42216834, y: 0.6136157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d89a170e692f7441a6ef7f734c2fbea
+      internalID: 454913502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +169,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprite bicho 2.png2_0: -779659072
+      Sprite bicho 2.png2_1: -255228119
+      Sprite bicho 2.png2_2: 454913502
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
