@@ -8,10 +8,12 @@ public class movimiento : MonoBehaviour
     public float speed = 1f;
     public Rigidbody2D personajeRB;
     public float rota = 5f;
+    public bool escondido = false;
     float change = .8f;
     float moveX;
     float moveY;
     [SerializeField] private FOV FOV;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -24,10 +26,8 @@ public class movimiento : MonoBehaviour
         movement();
         rotation();
         
-
-        
     }
-
+   
     public void movement()
     {
         moveX = Input.GetAxis("Horizontal");

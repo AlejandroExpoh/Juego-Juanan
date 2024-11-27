@@ -10,7 +10,7 @@ public class Chasing : MonoBehaviour
     public Vector2 DirectionToPlayer { get; private set; }
 
     [SerializeField]
-    private float _playerAwarenessDistance;
+    public float _playerAwarenessDistance;
 
 
     public bool Aware = false;
@@ -41,14 +41,14 @@ public class Chasing : MonoBehaviour
         Vector2 enemyToPlayerVector = player.position - transform.position;
         DirectionToPlayer = enemyToPlayerVector.normalized;
         Debug.Log(vision.collider.gameObject.tag);
-        if (enemyToPlayerVector.magnitude <= _playerAwarenessDistance && vision.collider.gameObject.CompareTag("Player"))
+        if (enemyToPlayerVector.magnitude <= _playerAwarenessDistance /*&& vision.collider.gameObject.CompareTag("Player")*/)
         {
            
             Aware = true;  
         }
         else
         {
-            //Aware = false;
+            Aware = false;
         }
 
         if (Aware)
