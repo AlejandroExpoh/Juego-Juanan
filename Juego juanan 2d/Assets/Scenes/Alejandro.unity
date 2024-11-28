@@ -1209,7 +1209,7 @@ GameObject:
   - component: {fileID: 628504527}
   - component: {fileID: 628504528}
   - component: {fileID: 628504529}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy Wander
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -1408,7 +1408,7 @@ GameObject:
   - component: {fileID: 633519950}
   - component: {fileID: 633519952}
   - component: {fileID: 633519951}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Monstruo
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -2320,7 +2320,7 @@ GameObject:
   - component: {fileID: 1663910501}
   - component: {fileID: 1663910500}
   - component: {fileID: 1663910503}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Babosa
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -2438,7 +2438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1870500309}
   - component: {fileID: 1870500310}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Triangle
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -2844,7 +2844,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2020508128
 Transform:
   m_ObjectHideFlags: 0

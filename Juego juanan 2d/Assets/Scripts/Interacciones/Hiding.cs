@@ -22,12 +22,12 @@ public class Hiding : MonoBehaviour
         if (escondido)
         {
             Chasing._playerAwarenessDistance = 0;
-            CamPrincipal.GetComponent<Camera>().fieldOfView = Mathf.Lerp(CamPrincipal.fieldOfView,cerca, tiempo*Time.deltaTime);
+            CamPrincipal.GetComponent<Camera>().orthographicSize = cerca;
         }
         else
         {
             Chasing._playerAwarenessDistance = 13;
-            CamPrincipal.GetComponent<Camera>().fieldOfView = Mathf.Lerp(cerca, normal, tiempo*Time.deltaTime);
+            CamPrincipal.GetComponent<Camera>().orthographicSize = normal;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
