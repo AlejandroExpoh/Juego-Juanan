@@ -805,7 +805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f36aa91a5aff74f90239f029f50bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 103904666}
+  Enemigo: {fileID: 628504521}
   escondido: 0
 --- !u!1 &497496229
 GameObject:
@@ -1204,7 +1204,7 @@ GameObject:
   - component: {fileID: 628504522}
   - component: {fileID: 628504527}
   - component: {fileID: 628504528}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Enemy Wander
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -1276,7 +1276,7 @@ MonoBehaviour:
   radius: 1
   height: 2
   canMove: 1
-  maxSpeed: 4
+  maxSpeed: 8
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -1359,7 +1359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8b7fe3e66de1784ea4d32e0194bf1cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerAwarenessDistance: 11
+  _playerAwarenessDistance: 15
   Aware: 0
   monsrb: {fileID: 628504528}
   rota: 2000
@@ -1401,7 +1401,7 @@ GameObject:
   - component: {fileID: 633519950}
   - component: {fileID: 633519952}
   - component: {fileID: 633519951}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Monstruo
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -2311,7 +2311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1870500309}
   - component: {fileID: 1870500310}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Triangle
   m_TagString: enemy
   m_Icon: {fileID: 0}

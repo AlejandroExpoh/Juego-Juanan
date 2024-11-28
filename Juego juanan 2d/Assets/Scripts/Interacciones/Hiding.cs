@@ -6,27 +6,41 @@ using UnityEngine;
 public class Hiding : MonoBehaviour
 {
     Chasing Chasing;
-    public Collider2D player;
+    public GameObject Enemigo;
     public bool escondido = false;
 
     void Start()
     {
-       Chasing = GetComponent<Chasing>();
+       Chasing = Enemigo.GetComponent<Chasing>();
     }
-    private void OnTriggerEnter2D(Collider2D player)
+    private void Update()
     {
-        escondido = true;
         if (escondido)
         {
+            Debug.Log("Entra");
             Chasing._playerAwarenessDistance = 0;
         }
-    }
-    private void OnTriggerExit2D(Collider2D player)
-    {
-        escondido=false;
-        if (!escondido)
+        else
         {
-            Chasing._playerAwarenessDistance = 11;
+            Debug.Log("Sale");
+            Chasing._playerAwarenessDistance = 13;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            escondido = true;
+            
+        }
+       
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            escondido = false;
+
         }
     }
 }

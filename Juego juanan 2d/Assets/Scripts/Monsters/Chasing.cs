@@ -37,14 +37,13 @@ public class Chasing : MonoBehaviour
 
     void Update()
     {
-        RaycastHit2D vision = Physics2D.Raycast(transform.position, -transform.position+player.position, Mathf.Infinity);
+
         Vector2 enemyToPlayerVector = player.position - transform.position;
         DirectionToPlayer = enemyToPlayerVector.normalized;
-        Debug.Log(vision.collider.gameObject.tag);
-        if (enemyToPlayerVector.magnitude <= _playerAwarenessDistance /*&& vision.collider.gameObject.CompareTag("Player")*/)
+        if (enemyToPlayerVector.magnitude <= _playerAwarenessDistance)
         {
-           
-            Aware = true;  
+
+            Aware = true;
         }
         else
         {
@@ -62,7 +61,7 @@ public class Chasing : MonoBehaviour
     }
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawRay(transform.position, -transform.position + player.position);
+        Gizmos.DrawSphere(transform.position, _playerAwarenessDistance);
     }
 }
+ 

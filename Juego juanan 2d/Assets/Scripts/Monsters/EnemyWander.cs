@@ -30,7 +30,7 @@ public class EnemyWander : MonoBehaviour
             positionWander = new Vector3(Mathf.Round(x), Mathf.Round(y), 0);
         }
         transform.position = positionWander;
-        Debug.Log(positionWander);
+        //Debug.Log(positionWander);
         
 
 
