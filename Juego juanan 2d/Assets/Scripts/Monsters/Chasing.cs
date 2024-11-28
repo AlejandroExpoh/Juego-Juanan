@@ -1,6 +1,7 @@
 using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Chasing : MonoBehaviour
@@ -12,10 +13,12 @@ public class Chasing : MonoBehaviour
     [SerializeField]
     public float _playerAwarenessDistance;
 
-
+    [Header("Variables")]
     public bool Aware = false;
     public Rigidbody2D monsrb;
     public float rota = 5f;
+    [Header("Variables2")]
+    public Animator animator;
     AIDestinationSetter aiDestinationSetter;
     Transform player, point;
 
@@ -38,6 +41,15 @@ public class Chasing : MonoBehaviour
     void Update()
     {
 
+        if(monsrb.position.x != 0 || monsrb.position.y != 0)
+        {
+            animator.SetBool("andar", true);
+        }
+        else
+        {
+            animator.SetBool("andar", false);
+        }
+
         Vector2 enemyToPlayerVector = player.position - transform.position;
         DirectionToPlayer = enemyToPlayerVector.normalized;
         if (enemyToPlayerVector.magnitude <= _playerAwarenessDistance)
@@ -59,9 +71,9 @@ public class Chasing : MonoBehaviour
             aiDestinationSetter.target = point;
         }
     }
-    private void OnDrawGizmos()
+    /*private void OnDrawGizmos()
     {
         Gizmos.DrawSphere(transform.position, _playerAwarenessDistance);
-    }
+    }*/
 }
  

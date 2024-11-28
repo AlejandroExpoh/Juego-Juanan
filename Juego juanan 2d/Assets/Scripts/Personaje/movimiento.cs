@@ -13,7 +13,9 @@ public class movimiento : MonoBehaviour
     float moveX;
     float moveY;
     [SerializeField] private FOV FOV;
-    
+    public Animator animator;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,15 @@ public class movimiento : MonoBehaviour
     {
         movement();
         rotation();
-        
+        if (moveX != 0 || moveY != 0)
+        {
+            animator.SetBool("Caminar", true);
+        }
+        else 
+        {
+            animator.SetBool("Caminar", false);
+        }
+
     }
    
     public void movement()
