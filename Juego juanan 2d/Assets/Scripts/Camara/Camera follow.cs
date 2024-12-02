@@ -5,7 +5,8 @@ using System;
 
 public class Camerafollow : MonoBehaviour
 {
-private Func<Vector3> GetcameraFollowPositionFunc;
+    public BoxCollider2D bounds;
+    private Func<Vector3> GetcameraFollowPositionFunc;
 public void Setup(Func<Vector3> GetcameraFollowPositionFunc)
     {
         this.GetcameraFollowPositionFunc = GetcameraFollowPositionFunc;
@@ -17,6 +18,7 @@ public void Setup(Func<Vector3> GetcameraFollowPositionFunc)
     }
     void Update()
     {
+
         Vector3 cameraFollowPosition = GetcameraFollowPositionFunc();
         cameraFollowPosition.z = transform.position.z;
 
