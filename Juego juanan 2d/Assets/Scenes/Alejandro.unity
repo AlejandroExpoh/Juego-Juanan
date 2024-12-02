@@ -809,9 +809,10 @@ MonoBehaviour:
   Enemigo: {fileID: 628504521}
   escondido: 0
   CamPrincipal: {fileID: 519420031}
-  normal: 12
+  tiempo: 2
   cerca: 9
-  tiempo: 0.5
+  aura: {fileID: 1405718682}
+  tamanyo: 3
 --- !u!1 &497496229
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,7 +977,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.92
+  orthographic size: 12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1986,7 +1987,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.6390576, y: 4.4181504, z: 4.4181504}
+  m_LocalScale: {x: 5.0000005, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 103904665}
