@@ -71,9 +71,6 @@ public class Chasing : MonoBehaviour
             aiDestinationSetter.target = point;
         }
     }
-    /*private void OnDrawGizmos()
-    {
-        Gizmos.DrawSphere(transform.position, _playerAwarenessDistance);
-    }*/
+    
 }
  
