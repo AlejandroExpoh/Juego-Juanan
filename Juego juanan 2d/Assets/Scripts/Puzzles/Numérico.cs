@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class Numérico : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public string password;
+    public string prueba;
+   
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        
+        if (password == prueba)
+        {
+            //Abrir puerta
+        }
+        else
+        {
+            //Reinicia y pide de nuevo el código
+        }
     }
 }
