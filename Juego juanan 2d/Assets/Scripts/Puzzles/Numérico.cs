@@ -1,27 +1,24 @@
+using Pathfinding.Ionic.Zip;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Numérico : MonoBehaviour
 {
-    public string password;
-    public string prueba;
+    public InputField Inputfield;
    
-    void Start()
-    {
-        
-    }
 
-    
-    void Update()
+
+    public void CheckInput()
     {
-        if (password == prueba)
+        if (Inputfield.text == "code")
         {
-            //Abrir puerta
+            //Open door
         }
         else
         {
-            //Reinicia y pide de nuevo el código
+
         }
     }
 }
