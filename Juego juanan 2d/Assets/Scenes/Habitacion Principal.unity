@@ -627,6 +627,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Xuerpo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7581418004732394687, guid: 5f13158902ba114489e2a5dd2e5875e6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007992712841643960, guid: 5f13158902ba114489e2a5dd2e5875e6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 8.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007992712841643960, guid: 5f13158902ba114489e2a5dd2e5875e6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 8.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007992712841643960, guid: 5f13158902ba114489e2a5dd2e5875e6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 8.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007992712841643960, guid: 5f13158902ba114489e2a5dd2e5875e6, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1020,6 +1040,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5210253494499026481, guid: 0ee7b0aff9f5a5445a815bde02171806, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7827048694663962065, guid: 0ee7b0aff9f5a5445a815bde02171806, type: 3}
       propertyPath: Jugador
       value: 
@@ -1309,7 +1333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &815329665
 Transform:
   m_ObjectHideFlags: 0
