@@ -29,14 +29,14 @@ public class CodeInteract : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name.Equals ("Door") && !IsDoorOpened)
+        if (collision.gameObject.name.Equals ("Puzzle") && !IsDoorOpened)
         {
             codePanel.SetActive(true);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.name.Equals("Door"))
+        if (collision.gameObject.name.Equals("Puzzle"))
         {
             codePanel.SetActive(false);
         }
