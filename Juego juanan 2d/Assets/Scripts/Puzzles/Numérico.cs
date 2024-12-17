@@ -3,22 +3,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Numérico : MonoBehaviour
 {
-    public InputField Inputfield;
-   
+    [SerializeField]
+    TMP_Text codeText;
+    string codeTextValue = "";
 
-
-    public void CheckInput()
+    private void Update()
     {
-        if (Inputfield.text == "code")
-        {
-            //Open door
-        }
-        else
-        {
+        codeText.text = codeTextValue;
 
+        if (codeTextValue == "1751")
+        {
+            CodeInteract.IsDoorOpened = true;
         }
+        if (codeTextValue.Length >= 4)
+            codeTextValue = "";
+     
     }
+
+    public void AddDigit(string digit)
+    {
+        codeTextValue += digit;
+    }
+
 }
