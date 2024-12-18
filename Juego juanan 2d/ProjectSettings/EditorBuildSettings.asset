@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Salon Principal.unity
     guid: 9ad205781b723b34e9877767733c1919
+  - enabled: 1
+    path: Assets/Scenes/Pasillo 2.unity
+    guid: 2154216adefa6914cbec24520c28bf3e
   m_configObjects: {}
