@@ -15,11 +15,11 @@ public class patrones : MonoBehaviour
     void Start()
     {
         positionWander = posiciones[i];
-        InvokeRepeating("randompos", 0, speed);
     }
 
     private void Update()
     {
+        positionWander = posiciones[i];
         transform.position = positionWander;
 
     }
@@ -27,13 +27,13 @@ public class patrones : MonoBehaviour
     {
         if (collision.CompareTag("enemy"))
         {
-            if(positionWander != posiciones[3])
+            if(i != 3)
             {
-                positionWander = posiciones[i+1];
+                i += 1;
             }
             else
             {
-                positionWander = posiciones[0];
+               i = 0;
             }
 
         }
