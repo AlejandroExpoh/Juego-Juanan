@@ -153,7 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb0500e9f12ce044b339ed5ad64071a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IndiceScena: 3
+  NameScena: 
+  spawnPoint: {x: 0, y: 0}
 --- !u!61 &18528161
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2182,7 +2183,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb0500e9f12ce044b339ed5ad64071a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IndiceScena: 3
+  NameScena: SalonPrincipal
+  spawnPoint: {x: -1.5, y: 0}
 --- !u!61 &1568433461
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2489,7 +2491,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb0500e9f12ce044b339ed5ad64071a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IndiceScena: 3
+  NameScena: SalonPrincipal
+  spawnPoint: {x: -46.5, y: 0}
 --- !u!61 &1744222340
 BoxCollider2D:
   m_ObjectHideFlags: 0
