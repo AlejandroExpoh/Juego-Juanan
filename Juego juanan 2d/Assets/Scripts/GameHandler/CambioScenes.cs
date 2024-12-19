@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 public class CambioScenes : MonoBehaviour
 {
     public string NameScena;
-    public Transform spawnPoint;
+    public Vector2 spawnPoint;
 
     public void Cambio()
     {
         PlayerPrefs.SetString("Entrada", NameScena);
-        PlayerPrefs.SetFloat("SpawnX", spawnPoint.position.x);
-        PlayerPrefs.SetFloat("SpawnY", spawnPoint.position.y);
+        PlayerPrefs.SetFloat("SpawnX", spawnPoint.x);
+        PlayerPrefs.SetFloat("SpawnY", spawnPoint.y);
 
         SceneManager.LoadScene(NameScena);
     }
