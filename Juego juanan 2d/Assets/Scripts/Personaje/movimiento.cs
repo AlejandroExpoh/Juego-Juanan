@@ -19,7 +19,18 @@ public class movimiento : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (PlayerPrefs.HasKey("Entrada"))
+        {
+            string entrada = PlayerPrefs.GetString("Entrada");
+            float spawnX = PlayerPrefs.GetFloat("SpawnX");
+            float spawnY = PlayerPrefs.GetFloat("SpawnY");
+
+            transform.position = new Vector3(spawnX, spawnY, transform.position.z);
+
+            PlayerPrefs.DeleteKey("Entrada");
+            PlayerPrefs.DeleteKey("SpawnX");
+            PlayerPrefs.DeleteKey("SpawnY");
+        }
     }
 
     // Update is called once per frame

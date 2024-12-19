@@ -5,10 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class CambioScenes : MonoBehaviour
 {
-    public int IndiceScena;
+    public string NameScena;
+    public Transform spawnPoint;
+
     public void Cambio()
     {
-        SceneManager.LoadScene(IndiceScena);
+        PlayerPrefs.SetString("Entrada", NameScena);
+        PlayerPrefs.SetFloat("SpawnX", spawnPoint.position.x);
+        PlayerPrefs.SetFloat("SpawnY", spawnPoint.position.y);
+
+        SceneManager.LoadScene(NameScena);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
