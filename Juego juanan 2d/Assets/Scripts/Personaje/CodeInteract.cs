@@ -39,6 +39,23 @@ public class CodeInteract : MonoBehaviour
         {
             Panel.SetActive(true);
         }
+        if (collision.gameObject.name.Equals("Periodico"))
+        {
+            Panel.SetActive(true);
+        }
+        if (collision.gameObject.name.Equals("Periodico"))
+        {
+            Panel.SetActive(true);
+        }
+        if (collision.gameObject.name.Equals("Periodico"))
+        {
+            Panel.SetActive(true);
+        }
+        if (collision.gameObject.name.Equals("Periodico"))
+        {
+            Panel.SetActive(true);
+        }
+
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
