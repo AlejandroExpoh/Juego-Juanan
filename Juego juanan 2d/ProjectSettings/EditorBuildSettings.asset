@@ -35,4 +35,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Muerte.unity
     guid: 2b2bf5fa28c7f8147955030d8b29332b
+  - enabled: 1
+    path: "Assets/Scenes/Ba\xF1o.unity"
+    guid: b6a32e31316d6c449a88d3443a2c99d4
+  - enabled: 1
+    path: Assets/Scenes/Pasillo2.unity
+    guid: 9c1a2a4e3be42ea4ebdcdec2ca2204a5
+  - enabled: 1
+    path: Assets/Scenes/Fin.unity
+    guid: c0a35c8fd63943045b80f2247e5bc9ab
   m_configObjects: {}
