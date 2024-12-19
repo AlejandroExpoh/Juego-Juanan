@@ -1926,7 +1926,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2615126097803537204, guid: 8989a487520fbbe40980a7fffc1455fb, type: 3}
       propertyPath: _playerAwarenessDistance
-      value: 40
+      value: 4000
       objectReference: {fileID: 0}
     - target: {fileID: 4159410644401266474, guid: 8989a487520fbbe40980a7fffc1455fb, type: 3}
       propertyPath: m_Layer
@@ -2016,7 +2016,9 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 801013409}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4161987321864161486, guid: 8989a487520fbbe40980a7fffc1455fb, type: 3}
+    - {fileID: 4465159687316060301, guid: 8989a487520fbbe40980a7fffc1455fb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6323,7 +6325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7033822980836969472, guid: 5f13158902ba114489e2a5dd2e5875e6, type: 3}
       propertyPath: m_Name
-      value: Xuerpo (1)
+      value: 'Xuerpo '
       objectReference: {fileID: 0}
     - target: {fileID: 8095088319183946352, guid: 5f13158902ba114489e2a5dd2e5875e6, type: 3}
       propertyPath: Joven
