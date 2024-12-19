@@ -74,7 +74,7 @@ public class Mastermind : MonoBehaviour
         if (string.Join("", playerCombination) == string.Join("", correctCombination))
         {
             Debug.Log("¡Has acertado la combinación!"); 
-            CodeInteract.IsDoorOpened = true;
+            CodeInteractCocina.IsDoorOpened = true;
         }
         
     }

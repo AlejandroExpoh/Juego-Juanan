@@ -1640,6 +1640,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &491458460 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7033822980836969472, guid: 5f13158902ba114489e2a5dd2e5875e6, type: 3}
+  m_PrefabInstance: {fileID: 2142842125}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &494643358
 GameObject:
   m_ObjectHideFlags: 0
@@ -5846,17 +5851,21 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8095088319183946352, guid: 5f13158902ba114489e2a5dd2e5875e6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7033822980836969472, guid: 5f13158902ba114489e2a5dd2e5875e6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2142842129}
   m_SourcePrefab: {fileID: 100100000, guid: 5f13158902ba114489e2a5dd2e5875e6, type: 3}
 --- !u!114 &2142842126 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 667983762291341818, guid: 5f13158902ba114489e2a5dd2e5875e6, type: 3}
   m_PrefabInstance: {fileID: 2142842125}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 491458460}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1578b51be6f60334694fff76523f4996, type: 3}
@@ -5867,6 +5876,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5755864106103833588, guid: 5f13158902ba114489e2a5dd2e5875e6, type: 3}
   m_PrefabInstance: {fileID: 2142842125}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2142842129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491458460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66e8e0ffcc77324469c42fcf9dcba736, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  codePanel: {fileID: 2103581254}
+  PuertaFin: {fileID: 66411943}
+  PuertaFinOpen: {fileID: 2092835688}
+  "Ni\xF1o": {fileID: 40206597}
+  Joven: {fileID: 182332097}
+  Adulto: {fileID: 324668386}
+  Anciano: {fileID: 1442583021}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

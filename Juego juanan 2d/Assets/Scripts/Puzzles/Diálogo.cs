@@ -15,7 +15,7 @@ public class Diálogo : MonoBehaviour
 
         if (codeTextValue == "Eros,Vasilios,Ireneo,Learco,")
         {
-            CodeInteract.IsDoorOpened = true;
+            CodeInteractSalon.IsDoorOpened = true;
         }
         if (codeTextValue.Length >= 28)
             codeTextValue = "";
