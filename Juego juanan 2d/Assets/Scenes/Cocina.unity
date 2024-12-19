@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 8144695}
   - component: {fileID: 8144696}
   - component: {fileID: 8144697}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pulpo
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 26396940}
   - component: {fileID: 26396939}
   - component: {fileID: 26396938}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: silla (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -638,7 +638,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1970641402270805182, guid: 8989a487520fbbe40980a7fffc1455fb, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1970641402270805182, guid: 8989a487520fbbe40980a7fffc1455fb, type: 3}
       propertyPath: m_IsActive
@@ -658,7 +658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5030185429395246199, guid: 8989a487520fbbe40980a7fffc1455fb, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5030185429395246199, guid: 8989a487520fbbe40980a7fffc1455fb, type: 3}
       propertyPath: m_IsActive
@@ -698,7 +698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7227278601049057934, guid: 8989a487520fbbe40980a7fffc1455fb, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7227278601049057934, guid: 8989a487520fbbe40980a7fffc1455fb, type: 3}
       propertyPath: m_IsActive
@@ -773,7 +773,7 @@ GameObject:
   - component: {fileID: 244455367}
   - component: {fileID: 244455366}
   - component: {fileID: 244455365}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: silla (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -991,7 +991,7 @@ GameObject:
   - component: {fileID: 524593733}
   - component: {fileID: 524593732}
   - component: {fileID: 524593734}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: mesa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1121,7 +1121,7 @@ GameObject:
   - component: {fileID: 530632977}
   - component: {fileID: 530632976}
   - component: {fileID: 530632975}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: silla (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1711,7 +1711,7 @@ GameObject:
   - component: {fileID: 1333456328}
   - component: {fileID: 1333456327}
   - component: {fileID: 1333456326}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: silla (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1879,7 +1879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8821733739004482534, guid: c453048801c47c84995997169ad76560, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2026,7 +2026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8658645472494919338, guid: 5f13158902ba114489e2a5dd2e5875e6, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2148,7 +2148,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2541,7 +2541,7 @@ GameObject:
   - component: {fileID: 2039459309}
   - component: {fileID: 2039459308}
   - component: {fileID: 2039459307}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: silla (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
