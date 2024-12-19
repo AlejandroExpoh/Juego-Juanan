@@ -73,12 +73,10 @@ public class Mastermind : MonoBehaviour
         // Comprobar si el jugador acertó la combinación completa
         if (string.Join("", playerCombination) == string.Join("", correctCombination))
         {
-            Debug.Log("¡Has acertado la combinación!");
+            Debug.Log("¡Has acertado la combinación!"); 
+            CodeInteract.IsDoorOpened = true;
         }
-        else
-        {
-            Debug.Log("Inténtalo de nuevo.");
-        }
+        
     }
 
     private Color GetColorFromCode(string code)

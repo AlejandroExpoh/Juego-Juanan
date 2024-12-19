@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pasillo2.unity
     guid: 2154216adefa6914cbec24520c28bf3e
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: b50c62069d77e8e4e8dc0a2992302767
   m_configObjects: {}
