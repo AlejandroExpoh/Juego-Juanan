@@ -1799,6 +1799,7 @@ GameObject:
   - component: {fileID: 452928880}
   - component: {fileID: 452928879}
   - component: {fileID: 452928878}
+  - component: {fileID: 452928881}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -1884,6 +1885,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452928876}
   m_CullTransparentMesh: 1
+--- !u!114 &452928881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452928876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49d404112adbf754e88ed45d571c0f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tiempo: 2
 --- !u!1 &503907678
 GameObject:
   m_ObjectHideFlags: 0
@@ -7030,6 +7044,10 @@ MonoBehaviour:
   PuertaFin: {fileID: 865850042}
   PuertaFinOpen: {fileID: 21570526}
   Panel: {fileID: 0}
+  "Ni\xF1o": {fileID: 0}
+  Joven: {fileID: 0}
+  Adulto: {fileID: 0}
+  Anciano: {fileID: 0}
 --- !u!1 &2017534264
 GameObject:
   m_ObjectHideFlags: 0
