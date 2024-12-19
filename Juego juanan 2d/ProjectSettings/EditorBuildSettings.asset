@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cocina.unity
     guid: ade572adaec6d264aadc920549e4cb8d
+  - enabled: 1
+    path: Assets/Scenes/Muerte.unity
+    guid: 2b2bf5fa28c7f8147955030d8b29332b
   m_configObjects: {}

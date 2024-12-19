@@ -42,7 +42,7 @@ public class Hiding : MonoBehaviour
         }
         else
         {
-            Chasing._playerAwarenessDistance = 13;
+            Chasing._playerAwarenessDistance =  30;
             actual = normal;
             actualuz = descubierto;
         }
