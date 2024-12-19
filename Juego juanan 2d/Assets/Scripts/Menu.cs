@@ -47,10 +47,12 @@ public class Menu : MonoBehaviour
     public void IrAlMenu()
     {
         SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
     }
 
     public void Jugar()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(6);
+        Time.timeScale = 1f;
     }
 }

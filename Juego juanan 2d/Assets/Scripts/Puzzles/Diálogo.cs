@@ -1,17 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Diálogo : MonoBehaviour
 {
-    void Start()
+    [SerializeField]
+    TMP_Text codeText;
+    string codeTextValue = "";
+
+    private void Update()
     {
-        
+        codeText.text = codeTextValue;
+
+        if (codeTextValue == "Eros,Vasilios,Ireneo,Learco,")
+        {
+            CodeInteract.IsDoorOpened = true;
+        }
+        if (codeTextValue.Length >= 28)
+            codeTextValue = "";
+
     }
 
-    
-    void Update()
+    public void Addstring(string digit)
     {
-        
+        codeTextValue += digit;
     }
+
 }
