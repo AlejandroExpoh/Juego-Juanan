@@ -6,19 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Alejandro.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Menu.unity
+    guid: b50c62069d77e8e4e8dc0a2992302767
   - enabled: 1
     path: Assets/Scenes/Habitacion Principal.unity
     guid: a3ee52fbd02c15640b1417f06825e74a
   - enabled: 1
+    path: Assets/Scenes/Alejandro.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
     path: Assets/Scenes/Pasillo.unity
     guid: 78d8a09c97907d742989463923e8f077
   - enabled: 1
-    path: Assets/Scenes/Salon Principal.unity
+    path: Assets/Scenes/SalonPrincipal.unity
     guid: 9ad205781b723b34e9877767733c1919
   - enabled: 1
-    path: Assets/Scenes/Pasillo 2.unity
+    path: Assets/Scenes/Pasillo2.1.unity
     guid: 2154216adefa6914cbec24520c28bf3e
   - enabled: 1
     path: Assets/Scenes/Cinematica.unity
