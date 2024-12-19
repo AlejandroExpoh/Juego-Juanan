@@ -10,11 +10,7 @@ public class Reset : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("meteorito"))
-        {
-            SceneManager.LoadScene(escena);
-        }
-        if (collision.CompareTag("meteorito"))
+        if (collision.CompareTag("enemy"))
         {
             SceneManager.LoadScene(escena);
         }
